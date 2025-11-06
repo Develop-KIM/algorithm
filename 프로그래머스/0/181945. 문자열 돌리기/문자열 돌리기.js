@@ -9,5 +9,5 @@ let input = [];
 rl.on('line', function (line) {
     input = [...line];
 }).on('close',function(){
-    console.log(input.join('\n'))
+    [...input].forEach(c => console.log(c))
 });
