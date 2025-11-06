@@ -4,13 +4,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-let input = [];
-
 rl.on('line', function (line) {
-    input = line.split(' ');
-}).on('close', function () {
-    str1 = input[0];
-    str2 = input[1];
-    const result = (str1 + str2).trim();
-    console.log(result);
-});
+    const input = line.split(' ');
+    console.log(input.join(''));
+})
