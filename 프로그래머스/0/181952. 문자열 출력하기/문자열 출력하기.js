@@ -6,5 +6,4 @@ const rl = readline.createInterface({
 
 rl.on('line', function (line) {
     console.log(line);
-    rl.close();
-});
+})
