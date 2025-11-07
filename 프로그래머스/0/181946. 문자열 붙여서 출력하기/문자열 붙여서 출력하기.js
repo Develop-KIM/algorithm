@@ -4,7 +4,10 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+let input = [];
+
 rl.on('line', function (line) {
-    const input = line.split(' ');
+    input = line.split(' ');
+}).on('close', function () {
     console.log(input.join(''));
-})
+});
