@@ -10,9 +10,7 @@ rl.on('line', function (line) {
     input = line.split(' ');
 }).on('close', function () {
     str = input[0];
-    n = Number(input[1])
+    n = Number(input[1]);
     
-    const result = str.repeat(n)
-    
-    console.log(result)
+    console.log(str.repeat(n));
 });
