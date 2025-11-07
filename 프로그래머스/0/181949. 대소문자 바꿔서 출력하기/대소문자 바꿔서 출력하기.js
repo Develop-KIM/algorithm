@@ -8,7 +8,8 @@ let input = [];
 
 rl.on('line', function (line) {
     input = [...line];
-}).on('close',function(){
-    const result = input.map((char) => (/[a-z]/.test(char) ? char.toUpperCase() : char.toLowerCase())).join('')
+}).on('close',function(){ 
+    const result = input.map((char) => /[a-z]/.test(char) ? char.toUpperCase() : char.toLowerCase()).join('');
+    
     console.log(result)
 });
